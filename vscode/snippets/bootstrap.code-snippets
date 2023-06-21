@@ -1,0 +1,21 @@
+{
+  "Bootstrap 5": {
+    "description": "Bootstrap 5 starter template",
+    "prefix": "bootstrap",
+    "body": [
+      "<!doctype html>",
+      "<html lang=\"fr\">\n",
+      "<head>",
+      "\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css\" />",
+      "\n\n\t<title>$1</title>",
+      "</head>",
+      "\n<body>",
+      "\n\n\t<h1>$2</h1>",
+      "\t\t\n\n\n\n$3",
+      "\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.min.js\"></script>",
+      "</body>",
+      "\n</html>"
+    ]
+  }
+}

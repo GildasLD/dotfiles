@@ -1,0 +1,11 @@
+[Unit]
+Description=Appliquer les paramètres hdparm aux disques
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set-hdparm.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1184 @@
+{
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[clojure]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "[cmake]": {
+        "editor.defaultFormatter": "KylinIDETeam.cmake-intellisence"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[csv]": {},
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "comments": false,
+            "other": false,
+            "strings": false
+        }
+    },
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[erb]": {
+        "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+    },
+    "[handlebars]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+        "editor.defaultFormatter": "monosans.djlint"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnPaste": true,
+        "editor.suggest.showKeywords": false,
+        "editor.suggestSelection": "recentlyUsed"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnPaste": true
+    },
+    "[jinja-css]": {
+        "editor.defaultFormatter": "esbenp.c-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[kotlin]": {
+        "editor.defaultFormatter": "cstef.kotlin-formatter"
+    },
+    "[kotlinscript]": {
+        "editor.defaultFormatter": "cstef.kotlin-formatter"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[properties]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "mikoz.black-py",
+        "editor.formatOnPaste": true
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "mkhl.shfmt"
+    },
+    "[twig]": {
+        "editor.defaultFormatter": "mblode.twig-language-2"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+    "bookmarks.label.suggestion": "suggestWhenSelected",
+    "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.sideBar.expanded": true,
+    "bookmarks.wrapNavigation": false,
+    "breadcrumbs.enabled": true,
+    "clang-format.executable.linux": "/usr/bin/clang-format",
+    "clang-format.fallbackStyle": "Gnu",
+    "clang-format.language.c.fallbackStyle": "Gnu",
+    "clang-format.language.c.style": "Gnu",
+    "clang-format.language.cpp.style": "Gnu",
+    "clang-format.style": "Gnu",
+    "clangd.arguments": [
+        "--completion-style=detailed"
+    ],
+    "clangd.inactiveRegions.useBackgroundHighlight": true,
+    "clangd.path": "/usr/bin/clangd",
+    "cmake.options.statusBarVisibility": "compact",
+    "dart.flutterSdkPath": "/opt/flutter",
+    "debug.console.fontSize": 16,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "debug.javascript.autoAttachSmartPattern": [
+        "${workspaceFolder}",
+        "!**/node_modules",
+        "**/$KNOWN_TOOLS$"
+    ],
+    "debug.showBreakpointsInOverviewRuler": true,
+    "diffEditor.maxComputationTime": 500,
+    "djlint.enableLinting": false,
+    "djlint.formatCss": false,
+    "djlint.formatJs": false,
+    "djlint.noFunctionFormatting": true,
+    "djlint.showInstallError": false,
+    "djlint.useVenv": false,
+    // "docker.containers.description": [
+    //  "Compose Project Name",
+    //  "ContainerName",
+    //  "Status"
+    // ],
+    // "docker.containers.groupBy": "None",
+    "docker.containers.label": "ContainerName",
+    "docker.containers.sortBy": "Label",
+    "docker.volumes.sortBy": "CreatedTime",
+    "docthis.inferTypesFromNames": true,
+    "docthis.returnsTag": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "editor.formatOnSave": "always",
+        "source.addMissingImports": "always",
+        "source.fixAll": "always",
+        "source.organizeImports": "always",
+        "source.sortImports": "always"
+    },
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.detectIndentation": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.fastScrollSensitivity": 2,
+    "editor.folding": true, // gutter - paddingu
+    // Controls the font family.
+    "editor.fontFamily": "IBMPlexMono, monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": false,
+    // Controls the font size in pixels.
+    "editor.fontSize": 16,
+    "editor.fontVariations": false,
+    "editor.fontWeight": "normal",
+    // "editor.fontFamily": "Consolas, Consolas, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, monospace",
+    // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'", // false || false
+    // "editor.fontSize": 16,
+    // "editor.fontWeight": "normal",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.glyphMargin": true, // padding | gutter | false
+    "editor.guides.bracketPairs": true,
+    "editor.hover.delay": 400,
+    "editor.hover.enabled": true,
+    "editor.inlayHints.enabled": "on",
+    "editor.inlayHints.fontFamily": "IBMPlexMono, monospace, 'Droid Sans Fallback'",
+    "editor.inlineSuggest.enabled": true,
+    "editor.insertSpaces": true,
+    "editor.lineDecorationsWidth": 0, // undocumented // gutter - padding
+    "editor.lineNumbers": "on",
+    "editor.lineNumbersMinChars": 0, // undocumented // gutter - padding
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 40,
+    "editor.minimap.scale": 2,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fill",
+    "editor.mouseWheelScrollSensitivity": 5,
+    "editor.mouseWheelZoom": true,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestionsDelay": 30,
+    "editor.renderWhitespace": "trailing",
+    // "editor.rulers": [80, 120],
+    "editor.scrollbar.scrollByPage": true,
+    "editor.showUnused": true,
+    "editor.smoothScrolling": false,
+    "editor.snippetSuggestions": "top",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.tabSize": 4,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.wordWrap": "on",
+    "editor.wrappingStrategy": "advanced",
+    "emmet.triggerExpansionOnTab": true,
+    "enable-crash-reporter": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.options": {
+        "env": {
+            "browser": true,
+            "es6": true,
+            "jest/globals": true
+        },
+        "parserOptions": {
+            "ecmaFeatures": {
+                "jsx": true
+            },
+            "ecmaVersion": 2019,
+            "sourceType": "module"
+        },
+        "rules": {
+            "no-debugger": "off"
+        }
+    },
+    "eslint.run": "onSave",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "explorer.autoRevealExclude": {
+        "**/.next": true,
+        "**/bower_components": true,
+        "**/node_modules": true
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.excludeGitIgnore": false,
+    "explorer.fileNesting.enabled": false,
+    "explorer.fileNesting.patterns": {
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.ts": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+        "tsconfig.json": "tsconfig.*.json"
+    },
+    "explorer.openEditors.sortOrder": "alphabetical",
+    "extensions.autoUpdate": true,
+    "files.associations": {
+        "*.cf": "lua",
+        "*.cnf": "properties",
+        "*.css": "css",
+        "*.env": "properties",
+        "*.gd": "python",
+        "*.gz": "dot",
+        "*.html": "html",
+        "*.js": "javascript",
+        "*.json": "jsonc",
+        "*.kt": "kotlin",
+        "*.md": "markdown",
+        "*.nix": "shellscript",
+        "*.php": "php",
+        "*.plantuml": "lua",
+        "*.pro": "shellscript",
+        "*.psql": "sql",
+        "*.sublime-keymap": "json",
+        "*.sublime-settings": "json",
+        "*.template": "jsonc",
+        "*.wikitext": "wikitext",
+        "*.xml": "html",
+        "*.yaml": "yaml",
+        "*.yml": "yaml",
+        ".djlintrc": "json",
+        ".env": "properties",
+        ".env.example": "properties",
+        ".env.local": "properties",
+        ".env.new": "properties",
+        ".env.production": "properties",
+        ".htaccess": "ruby",
+        ".tmux.conf.local": "properties",
+        "LICENSE": "markdown",
+        "README": "markdown",
+        "README.md": "markdown",
+        "config": "jsonc",
+        "env-example": "properties",
+        "*.pacnew": "ini"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1,
+    "files.defaultLanguage": "{activeEditorLanguage}",
+    // Issues with unit test files
+    //"editor.trimAutoWhitespace": false,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.idea": false,
+        "**/.sql": false,
+        "**/.vscode*": false,
+        "**/cache/": true,
+        "**/dist/": false,
+        "**/infinitewp/": true,
+        "**/node_modules/": false,
+        "**/staticfiles/": true,
+        "**/uploads/": true,
+        "**/venv/": false,
+        ".git/": false,
+        ".next/": false,
+        "wp-admin/": true,
+        "wp-config.*": false,
+        "wp-includes/": true,
+        "xmlrpc.php": true
+    },
+    "files.insertFinalNewline": true,
+    // Configure paths or glob patterns to exclude from file watching.
+    "files.watcherExclude": {
+        "**/.git": true,
+        "**/.hg/store/**": true,
+        "**/.next/**": true,
+        "**/.sql": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.decorations.enabled": true,
+    "git.enableCommitSigning": true,
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "never",
+    "gitblame.ignoreWhitespace": true,
+    "gitblame.inlineMessageEnabled": true,
+    "gitblame.statusBarMessageFormat": "Blame ${author.name} (${time.ago}) - ${commit.hash_short,length} - ${commit.summary}\t",
+    "github.copilot.enable": {
+        "*": false,
+        "gradle": false,
+        "java": false,
+        "lua": false,
+        "markdown": false,
+        "plaintext": false,
+        "python": false,
+        "scminput": false
+    },
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "go.toolsManagement.autoUpdate": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "html.format.wrapAttributes": "force-expand-multiline",
+    "html.suggest.html5": true,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "intelephense.diagnostics.ignoredCodes": [
+        1009
+    ],
+    "intelephense.telemetry.enabled": false,
+    "javascript.autoClosingTags": false,
+    "javascript.format.semicolons": "insert",
+    "javascript.preferGoToSourceDefinition": true,
+    "javascript.referencesCodeLens.enabled": false,
+    "javascript.referencesCodeLens.showOnAllFunctions": false,
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.suggest.completeJSDocs": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.validate.enable": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "jshint.lintHTML": true,
+    "jshint.options": {
+        "esversion": 6
+    },
+    "kotlin-formatter.ktlintPath": "/usr/local/bin/ktlint",
+    "kotlin.debugAdapter.enabled": false,
+    "kotlin.languageServer.enabled": false,
+    "liveSassCompile.settings.autoprefix": [
+        "> 0.25%",
+        "not ie 11"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".css",
+            "format": "expanded",
+            "generateMap": true,
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "firefox-developer-edition",
+    "liveServer.settings.CustomBrowser": "firefox-developer-edition",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.wait": 1,
+    "makefile.configureOnOpen": false,
+    "markdown.preview.fontFamily": "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+    "markdown.preview.fontSize": 16,
+    "markdown.preview.typographer": true,
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.makeroom",
+            "description": "Need breath !!",
+            "label": "Make room",
+            "sequence": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        },
+        {
+            "command": "multiCommand.eslint",
+            "languages": [
+                "javascript",
+                "typescript"
+            ],
+            "sequence": [
+                "eslint.executeAutofix"
+            ]
+        }
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.showFoldingControls": "always",
+    "php-cs-fixer.autoFixBySemicolon": true,
+    "php-cs-fixer.executablePath": "~/.config/composer/vendor/bin/phpcs_phar/phpcs.phar",
+    "php-cs-fixer.lastDownload": 1646160623194,
+    "php.debug.executablePath": "xdebug",
+    "php.validate.executablePath": "/usr/bin/php",
+    "phpcs.executablePath": "",
+    "phpcs.standard": "",
+    "prettier.jsxSingleQuote": true,
+    "prettier.proseWrap": "never",
+    "prettier.resolveGlobalModules": true,
+    "prettier.semi": false,
+    "prettier.singleAttributePerLine": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportImplicitStringConcatenation": "warning",
+        "reportUnboundVariable": "information"
+    },
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.formatting.autopep8Path": "black",
+    "python.formatting.provider": "black",
+    // "workbench.statusBar.visible": false,
+    // "liveSassCompile.settings.showOutputWindowOn": "None"
+    // "php.validate.executablePath": ""
+    "python.languageServer": "None",
+    "python.linting.pylintArgs": [
+        "--disable=all",
+        "--disable=W"
+    ],
+    // "python.languageServer": "Pylance",
+    "python.linting.pylintEnabled": false,
+    "redhat.telemetry.enabled": false,
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.useLocalServer": false,
+    "scm.diffDecorationsGutterAction": "diff",
+    "scm.diffDecorationsGutterPattern": {
+        "added": true
+    },
+    "scm.inputfontSize": 16,
+    "screencastMode.keyboardOptions": {
+        "showCommandGroups": false,
+        "showCommands": true,
+        "showKeybindings": true,
+        "showKeys": true,
+        "showSingleEditorCursorMoves": true
+    },
+    // "workbench.activityBar.visible": false, // gutter - padding
+    "scss.showErrors": true,
+    "search.exclude": {
+        "**/*.code-search": true,
+        "**/.build": true,
+        "**/.gh-pages": true,
+        "**/.git": true,
+        "**/.next": true,
+        "**/.sql": true,
+        "**/bower_components": true,
+        "**/build": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/log": true,
+        "**/node_modules": true,
+        "**/staticfiles/": true,
+        "**/tmp": true,
+        "**/vendor": true,
+        "**/venv/": true
+    },
+    "search.smartCase": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "shellcheck.executablePath": "/usr/bin/shellcheck",
+    //   "shfmt.executableArgs": ["--write --simplify --indent 0 --space-redirects"],
+    "shfmt.executablePath": "/usr/bin/shfmt",
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "https://0.0.0.0/"
+        }
+    ],
+    "sonarlint.disableTelemetry": true,
+    "sonarlint.rules": {
+        "javascript:S100": {
+            "level": "on"
+        },
+        "javascript:S103": {
+            "level": "off"
+        },
+        "javascript:S104": {
+            "level": "on"
+        },
+        "javascript:S105": {
+            "level": "on"
+        },
+        "javascript:S106": {
+            "level": "off"
+        },
+        "javascript:S1066": {
+            "level": "on"
+        },
+        "javascript:S1067": {
+            "level": "on"
+        },
+        "javascript:S109": {
+            "level": "off"
+        },
+        "javascript:S1105": {
+            "level": "on"
+        },
+        "javascript:S1110": {
+            "level": "on"
+        },
+        "javascript:S1116": {
+            "level": "on"
+        },
+        "javascript:S1117": {
+            "level": "on"
+        },
+        "javascript:S1128": {
+            "level": "off"
+        },
+        "javascript:S113": {
+            "level": "on"
+        },
+        "javascript:S1131": {
+            "level": "off"
+        },
+        "javascript:S1154": {
+            "level": "on"
+        },
+        "javascript:S117": {
+            "level": "on"
+        },
+        "javascript:S1172": {
+            "level": "off"
+        },
+        "javascript:S1192": {
+            "level": "off"
+        },
+        "javascript:S121": {
+            "level": "off"
+        },
+        "javascript:S122": {
+            "level": "on"
+        },
+        "javascript:S125": {
+            "level": "off"
+        },
+        "javascript:S126": {
+            "level": "on"
+        },
+        "javascript:S131": {
+            "level": "on"
+        },
+        "javascript:S134": {
+            "level": "on"
+        },
+        "javascript:S135": {
+            "level": "on"
+        },
+        "javascript:S138": {
+            "level": "on"
+        },
+        "javascript:S139": {
+            "level": "on"
+        },
+        "javascript:S1438": {
+            "level": "off"
+        },
+        "javascript:S1440": {
+            "level": "off"
+        },
+        "javascript:S1441": {
+            "level": "off"
+        },
+        "javascript:S1442": {
+            "level": "off"
+        },
+        "javascript:S1451": {
+            "level": "on"
+        },
+        "javascript:S1481": {
+            "level": "off"
+        },
+        "javascript:S1488": {
+            "level": "on"
+        },
+        "javascript:S1525": {
+            "level": "on"
+        },
+        "javascript:S1526": {
+            "level": "on"
+        },
+        "javascript:S1528": {
+            "level": "on"
+        },
+        "javascript:S1530": {
+            "level": "on"
+        },
+        "javascript:S1535": {
+            "level": "on"
+        },
+        "javascript:S1537": {
+            "level": "off"
+        },
+        "javascript:S1539": {
+            "level": "on"
+        },
+        "javascript:S1541": {
+            "level": "on"
+        },
+        "javascript:S1774": {
+            "level": "off"
+        },
+        "javascript:S1821": {
+            "level": "on"
+        },
+        "javascript:S1854": {
+            "level": "off"
+        },
+        "javascript:S2004": {
+            "level": "off"
+        },
+        "javascript:S2138": {
+            "level": "on"
+        },
+        "javascript:S2208": {
+            "level": "on"
+        },
+        "javascript:S2260": {
+            "level": "on"
+        },
+        "javascript:S2376": {
+            "level": "on"
+        },
+        "javascript:S2424": {
+            "level": "on"
+        },
+        "javascript:S2427": {
+            "level": "on"
+        },
+        "javascript:S2428": {
+            "level": "on"
+        },
+        "javascript:S2817": {
+            "level": "on"
+        },
+        "javascript:S3003": {
+            "level": "on"
+        },
+        "javascript:S3317": {
+            "level": "on"
+        },
+        "javascript:S3353": {
+            "level": "off"
+        },
+        "javascript:S3402": {
+            "level": "on"
+        },
+        "javascript:S3498": {
+            "level": "on"
+        },
+        "javascript:S3499": {
+            "level": "on"
+        },
+        "javascript:S3504": {
+            "level": "off"
+        },
+        "javascript:S3512": {
+            "level": "off"
+        },
+        "javascript:S3513": {
+            "level": "on"
+        },
+        "javascript:S3514": {
+            "level": "on"
+        },
+        "javascript:S3523": {
+            "level": "on"
+        },
+        "javascript:S3524": {
+            "level": "off"
+        },
+        "javascript:S3525": {
+            "level": "on"
+        },
+        "javascript:S3533": {
+            "level": "on"
+        },
+        "javascript:S3723": {
+            "level": "off"
+        },
+        "javascript:S3757": {
+            "level": "on"
+        },
+        "javascript:S3758": {
+            "level": "on"
+        },
+        "javascript:S3760": {
+            "level": "on"
+        },
+        "javascript:S3786": {
+            "level": "on"
+        },
+        "javascript:S3798": {
+            "level": "off"
+        },
+        "javascript:S3801": {
+            "level": "on"
+        },
+        "javascript:S3827": {
+            "level": "on"
+        },
+        "javascript:S3973": {
+            "level": "on"
+        },
+        "javascript:S4139": {
+            "level": "on"
+        },
+        "javascript:S4326": {
+            "level": "on"
+        },
+        "javascript:S5867": {
+            "level": "on"
+        },
+        "javascript:S6480": {
+            "level": "on"
+        },
+        "javascript:S6582": {
+            "level": "off"
+        },
+        "javascript:S881": {
+            "level": "on"
+        },
+        "javascript:S909": {
+            "level": "on"
+        },
+        "php:P1009": {
+            "level": "off"
+        },
+        "php:S100": {
+            "level": "off"
+        },
+        "php:S103": {
+            "level": "off"
+        },
+        "php:S1131": {
+            "level": "off"
+        },
+        "php:S1192": {
+            "level": "off"
+        },
+        "php:S125": {
+            "level": "off"
+        },
+        "php:S6600": {
+            "level": "off"
+        },
+        "python:S117": {
+            "level": "off"
+        },
+        "python:S125": {
+            "level": "off"
+        },
+        "python:S2201": {
+            "level": "off"
+        },
+        "typescript:S100": {
+            "level": "on"
+        },
+        "typescript:S103": {
+            "level": "off"
+        },
+        "typescript:S104": {
+            "level": "on"
+        },
+        "typescript:S105": {
+            "level": "on"
+        },
+        "typescript:S106": {
+            "level": "off"
+        },
+        "typescript:S1066": {
+            "level": "on"
+        },
+        "typescript:S1067": {
+            "level": "on"
+        },
+        "typescript:S109": {
+            "level": "off"
+        },
+        "typescript:S1105": {
+            "level": "on"
+        },
+        "typescript:S1110": {
+            "level": "on"
+        },
+        "typescript:S1116": {
+            "level": "on"
+        },
+        "typescript:S1117": {
+            "level": "on"
+        },
+        "typescript:S1128": {
+            "level": "off"
+        },
+        "typescript:S113": {
+            "level": "off"
+        },
+        "typescript:S1131": {
+            "level": "off"
+        },
+        "typescript:S1154": {
+            "level": "on"
+        },
+        "typescript:S117": {
+            "level": "on"
+        },
+        "typescript:S1172": {
+            "level": "on"
+        },
+        "typescript:S1192": {
+            "level": "on"
+        },
+        "typescript:S121": {
+            "level": "on"
+        },
+        "typescript:S122": {
+            "level": "on"
+        },
+        "typescript:S125": {
+            "level": "off"
+        },
+        "typescript:S126": {
+            "level": "on"
+        },
+        "typescript:S131": {
+            "level": "on"
+        },
+        "typescript:S134": {
+            "level": "on"
+        },
+        "typescript:S135": {
+            "level": "on"
+        },
+        "typescript:S138": {
+            "level": "on"
+        },
+        "typescript:S139": {
+            "level": "off"
+        },
+        "typescript:S1438": {
+            "level": "off"
+        },
+        "typescript:S1440": {
+            "level": "on"
+        },
+        "typescript:S1441": {
+            "level": "off"
+        },
+        "typescript:S1451": {
+            "level": "off"
+        },
+        "typescript:S1488": {
+            "level": "on"
+        },
+        "typescript:S1525": {
+            "level": "on"
+        },
+        "typescript:S1526": {
+            "level": "on"
+        },
+        "typescript:S1528": {
+            "level": "on"
+        },
+        "typescript:S1530": {
+            "level": "on"
+        },
+        "typescript:S1535": {
+            "level": "on"
+        },
+        "typescript:S1537": {
+            "level": "off"
+        },
+        "typescript:S1539": {
+            "level": "on"
+        },
+        "typescript:S1541": {
+            "level": "on"
+        },
+        "typescript:S1774": {
+            "level": "off"
+        },
+        "typescript:S1821": {
+            "level": "on"
+        },
+        "typescript:S2138": {
+            "level": "on"
+        },
+        "typescript:S2208": {
+            "level": "on"
+        },
+        "typescript:S2260": {
+            "level": "on"
+        },
+        "typescript:S2376": {
+            "level": "on"
+        },
+        "typescript:S2424": {
+            "level": "on"
+        },
+        "typescript:S2427": {
+            "level": "on"
+        },
+        "typescript:S2817": {
+            "level": "on"
+        },
+        "typescript:S2933": {
+            "level": "on"
+        },
+        "typescript:S2966": {
+            "level": "on"
+        },
+        "typescript:S3003": {
+            "level": "on"
+        },
+        "typescript:S3257": {
+            "level": "on"
+        },
+        "typescript:S3317": {
+            "level": "on"
+        },
+        "typescript:S3353": {
+            "level": "on"
+        },
+        "typescript:S3402": {
+            "level": "on"
+        },
+        "typescript:S3498": {
+            "level": "off"
+        },
+        "typescript:S3499": {
+            "level": "on"
+        },
+        "typescript:S3512": {
+            "level": "on"
+        },
+        "typescript:S3513": {
+            "level": "on"
+        },
+        "typescript:S3514": {
+            "level": "on"
+        },
+        "typescript:S3524": {
+            "level": "off"
+        },
+        "typescript:S3525": {
+            "level": "on"
+        },
+        "typescript:S3533": {
+            "level": "on"
+        },
+        "typescript:S3723": {
+            "level": "off"
+        },
+        "typescript:S3786": {
+            "level": "on"
+        },
+        "typescript:S3801": {
+            "level": "on"
+        },
+        "typescript:S3973": {
+            "level": "on"
+        },
+        "typescript:S4023": {
+            "level": "on"
+        },
+        "typescript:S4136": {
+            "level": "on"
+        },
+        "typescript:S4137": {
+            "level": "on"
+        },
+        "typescript:S4139": {
+            "level": "on"
+        },
+        "typescript:S4157": {
+            "level": "on"
+        },
+        "typescript:S4204": {
+            "level": "on"
+        },
+        "typescript:S4324": {
+            "level": "on"
+        },
+        "typescript:S4326": {
+            "level": "on"
+        },
+        "typescript:S4327": {
+            "level": "on"
+        },
+        "typescript:S4328": {
+            "level": "off"
+        },
+        "typescript:S4622": {
+            "level": "on"
+        },
+        "typescript:S4798": {
+            "level": "on"
+        },
+        "typescript:S5867": {
+            "level": "on"
+        },
+        "typescript:S6480": {
+            "level": "off"
+        },
+        "typescript:S6772": {
+            "level": "off"
+        },
+        "typescript:S881": {
+            "level": "on"
+        },
+        "typescript:S909": {
+            "level": "on"
+        },
+        "typescript:S6844": {
+            "level": "off"
+        }
+    },
+    "sortJSON.contextMenu": {
+        "sortJSON": true,
+        "sortJSONAlphaNum": true,
+        "sortJSONAlphaNumReverse": true,
+        "sortJSONKeyLength": true,
+        "sortJSONKeyLengthReverse": true,
+        "sortJSONReverse": true,
+        "sortJSONType": true,
+        "sortJSONTypeReverse": true,
+        "sortJSONValues": true,
+        "sortJSONValuesReverse": true
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.fontFamily": "IBMPlexMono, monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.mouseWheelScrollSensitivity": 1.1,
+    "terminal.integrated.tabStopWidth": 4,
+    "testing.autoRun.delay": 10,
+    "totalTypeScript.hiddenTips": [
+        "variable-type-annotation",
+        "basic-types",
+        "typing-function-parameters",
+        "any-type",
+        "ts-object-type",
+        "array-type",
+        "type-alias-declaration",
+        "tuple-type",
+        "literal-type",
+        "optional-object-property"
+    ],
+    "totalTypeScript.hideAllTips": false,
+    "totalTypeScript.hideBasicTips": false,
+    "tslint.autoFixOnSave": true,
+    "turboConsoleLog.addSemicolonInTheEnd": true,
+    "turboConsoleLog.delimiterInsideMessage": ">",
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "turboConsoleLog.insertEmptyLineAfterLogMessage": true,
+    "turboConsoleLog.insertEmptyLineBeforeLogMessage": true,
+    "turboConsoleLog.insertEnclosingClass": false,
+    "turboConsoleLog.insertEnclosingFunction": false,
+    "turboConsoleLog.logFunction": "console.warn",
+    "turboConsoleLog.logMessagePrefix": "\\n🚀",
+    "twig-language-2.indentStyle": "space",
+    "typescript.autoClosingTags": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.implementationsCodeLens.enabled": false,
+    "typescript.inlayHints.enumMemberValues.enabled": false,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+    "typescript.inlayHints.parameterNames.enabled": "none",
+    "typescript.inlayHints.parameterTypes.enabled": false,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+    "typescript.inlayHints.variableTypes.enabled": false,
+    "typescript.preferGoToSourceDefinition": false,
+    "typescript.referencesCodeLens.enabled": false,
+    "typescript.referencesCodeLens.showOnAllFunctions": false,
+    "typescript.suggest.autoImports": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.suggest.completeJSDocs": false,
+    "typescript.suggestionActions.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.confirmSaveUntitledWorkspace": false,
+    "window.title": "${dirty}${separator}${separator}${activeEditorLong} - ${appName}",
+    "workbench.colorCustomizations": {
+        "badge.background": "#de0000",
+        "badge.foreground": "#ffffff"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.showTabs": "multiple", // "multiple, single, none"
+    "workbench.editor.wrapTabs": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.hover.delay": 250,
+    "workbench.list.mouseWheelScrollSensitivity": 4,
+    "workbench.list.smoothScrolling": false,
+    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+    "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+    "workbench.reduceMotion": "on",
+    "workbench.sash.hoverDelay": 200,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.tree.indent": 15,
+    "workbench.tree.renderIndentGuides": "always",
+    "zenMode.fullScreen": false,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": true,
+    "clangd.checkUpdates": true,
+    "workbench.remoteIndicator.showExtensionRecommendations": false,
+    "extensions.ignoreRecommendations": true,
+    "sonarlint.connectedMode.connections.sonarcloud": [],
+    "sonarlint.pathToNodeExecutable": "/usr/bin/node",
+    "sonarlint.trace.server": "off",
+    "java.server.launchMode": "LightWeight",
+    "java.sharedIndexes.enabled": "off",
+    "java.jdt.ls.lombokSupport.enabled": false,
+    "java.jdt.ls.protobufSupport.enabled": false,
+    "java.autobuild.enabled": false,
+    "java.import.gradle.offline.enabled": true
+}

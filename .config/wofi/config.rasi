@@ -1,0 +1,14 @@
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+rofi.color-enabled: true
+rofi.font: xos4 Terminus 10
+rofi.lines: 5
+rofi.modi: Drun,run,window
+rofi.hide-scrollbar:true
+rofi.eh: 2
+rofi.bw: 2
+rofi.separator-style: solid
+rofi.color-window: #000000, #b0ffff, #b0ffff
+rofi.color-normal: #000000, #b0ffff, #000000, #000000, #0000ff
+rofi.color-urgent: #ffffff, #b0ffff, #000000, #000000, #0000ff
+rofi.color-active: #ffffff, #0000ff, #000000, #000000, #0000ff

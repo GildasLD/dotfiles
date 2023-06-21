@@ -1,0 +1,106 @@
+#!/bin/zsh
+
+set -o histexpand
+
+# Ajoute toujours les nouvelles lignes à la fin de l'historique.
+setopt always_to_end
+# Sauvegarde les commandes à la fin de l'historique à chaque fois.
+setopt append_history
+# Liste automatiquement les suggestions de complétion.
+setopt auto_list
+# Utilise des noms de répertoires comme raccourcis automatiques.
+setopt auto_name_dirs
+# Ajoute automatiquement un slash après les répertoires lors de l'auto-complétion.
+setopt auto_param_slash
+# Utilise `pushd` automatiquement lors du changement de répertoire.
+setopt auto_pushd
+# Enlève automatiquement le slash final lors de la complétion, si nécessaire.
+setopt auto_remove_slash
+# Permet de changer de répertoire sans utiliser la commande `cd`.
+setopt autocd
+# Suit les liens symboliques lors de la navigation dans les répertoires.
+setopt chase_links
+# Avertit avant de quitter si des jobs sont encore en cours.
+setopt check_jobs
+# Complète aussi les alias définis.
+setopt complete_aliases
+# Complète à l'intérieur d'un mot (pas seulement à la fin).
+setopt complete_in_word
+# Active les motifs de globbing étendus pour plus de flexibilité.
+setopt extended_glob
+# Ajoute des informations supplémentaires dans l'historique.
+setopt extended_history
+# Complète les noms de fichiers en utilisant les motifs globbing.
+setopt glob_complete
+# Hash automatiquement toutes les commandes dans les chemins disponibles.
+setopt hash_list_all
+# Expire d'abord les entrées d'historique en double.
+setopt hist_expire_dups_first
+# Ignore les doublons lors de la recherche dans l'historique.
+setopt hist_find_no_dups
+# Ne sauvegarde pas les commandes en double dans l'historique.
+setopt hist_ignore_all_dups
+# Ne garde qu'une instance d'une commande consécutive.
+setopt hist_ignore_dups
+# Ne garde pas dans l'historique les commandes commencées par un espace.
+setopt hist_ignore_space
+# Supprime les espaces superflus dans l'historique.
+setopt hist_reduce_blanks
+# Affiche les commandes avant de les exécuter depuis l'historique.
+setopt hist_verify
+# Envoie un signal HUP aux jobs en arrière-plan à la déconnexion.
+setopt hup
+# Empêche de quitter le shell avec Ctrl+D (EOF).
+setopt ignore_eof
+# Ajoute chaque commande à l'historique immédiatement après l'exécution.
+setopt inc_append_history
+# Permet d'utiliser des commentaires dans le shell interactif avec `#`.
+setopt interactive_comments
+# Affiche les types de fichiers lors de la complétion.
+setopt list_types
+# Affiche la liste complète des jobs en cours.
+setopt long_list_jobs
+# Remplace automatiquement le chemin après un `=` dans les assignations.
+setopt magicequalsubst
+# Permet la navigation dans les options de complétion avec les flèches.
+setopt menu_complete
+# Permet d'envoyer les sorties de commande vers plusieurs destinations.
+setopt multios
+# Désactive le bip sonore pour les erreurs.
+setopt nobeep
+# Empêche d'écraser des fichiers en redirigeant les sorties.
+setopt noclobber
+# Désactive le contrôle de flux (Ctrl+S et Ctrl+Q).
+setopt noflowcontrol
+# Évite les erreurs si un motif de globbing ne trouve pas de correspondance.
+setopt nonomatch
+# Affiche une notification dès qu'un job en arrière-plan est terminé.
+setopt notify
+# Trie les fichiers numériques dans l'ordre numérique plutôt qu'alphabétique.
+setopt numeric_glob_sort
+# Ajoute automatiquement les répertoires au chemin de recherche.
+setopt path_dirs
+# Affiche le code de sortie des commandes lorsque non nul.
+setopt print_exit_value
+# Permet l'utilisation de `%` pour des séquences spéciales dans l'invite.
+setopt prompt_percent
+# Active la substitution de variables dans l'invite.
+setopt prompt_subst
+# Empêche d'ajouter plusieurs fois le même répertoire dans la pile.
+setopt pushd_ignore_dups
+# Va dans le répertoire home si `pushd` est utilisé sans argument.
+setopt pushd_to_home
+# Partage l'historique entre plusieurs sessions.
+setopt share_history
+# Efface l'invite de droite après l'exécution d'une commande.
+setopt transient_rprompt
+
+unsetopt beep
+unsetopt bg_nice
+unsetopt clobber
+unsetopt flow_control
+unsetopt hist_beep
+unsetopt ignore_eof
+unsetopt list_ambiguous
+unsetopt list_beep
+unsetopt rm_star_silent

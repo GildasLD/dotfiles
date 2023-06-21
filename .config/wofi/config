@@ -1,0 +1,34 @@
+# width=650
+# height=256
+# mode=drun
+# filter_rate=100
+# style=style.css
+# matching=contains
+
+# wofi show --drun --conf ~/.config/wofi/config --style ~/.config/wofi/style.css
+
+show=drun
+width=750
+height=500
+always_parse_args=true
+show_all=true
+print_command=true
+layer=overlay
+insensitive=true
+columns=2
+prompt=
+style=style.css
+gtk_dark=true
+key_submit=Return,Enter,KP_Enter
+
+filter_rate=100
+matching=fuzzy
+allow_images=true
+allow_markup=true
+dmenu-parse_action=true
+drun-display_generic=true
+key_down=Tab
+key_expand=Right
+key_forward=Down
+key_backward=Left
+

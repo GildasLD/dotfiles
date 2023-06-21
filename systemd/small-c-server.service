@@ -1,0 +1,11 @@
+[Unit]
+Description=Service pour exécuter small-c-server au démarrage
+After=network.target
+
+[Service]
+ExecStart=/home/gildas/small-c-server/small-c-server.bin
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

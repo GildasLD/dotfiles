@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Génère la date actuelle au format spécifique et l'encode en Base64
+formatted_date=$(date "+%Y/%m/%d %H:%M:%S" | base64)
+
+# Génère un UUID
+uuid=$(uuidgen)
+
+# Génère une clé aléatoire (32 caractères alphanumériques)
+key=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)
+
+# Affiche la date encodée, l'UUID et la clé sur stdout
+echo "Date encodée (Base64) : $formatted_date"
+echo "UUID : $uuid"
+echo "Clé : $key"
+
+# Ajoute le contenu de la signature personnalisée
+cat <<EOL
+Cordialement,
+Gildas
+EOL

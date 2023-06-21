@@ -1,0 +1,43 @@
+#	$OpenBSD: sshd_config,v 1.104 2021/07/02 05:11:21 dtucker Exp $
+
+AddressFamily inet
+AllowAgentForwarding no
+AllowTcpForwarding no
+AuthorizedKeysFile	.ssh/authorized_keys
+Banner /etc/issue
+ChrootDirectory none
+KexAlgorithms diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256
+Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-ctr
+Compression no
+GSSAPIAuthentication no
+GSSAPICleanupCredentials no
+GatewayPorts no
+KbdInteractiveAuthentication no
+KerberosAuthentication no
+KerberosOrLocalPasswd no
+KerberosTicketCleanup no
+LogLevel VERBOSE
+LoginGraceTime 2m
+MaxAuthTries 3
+MaxSessions 4
+MaxStartups 10:30:50
+PasswordAuthentication no
+PermitEmptyPasswords no
+PermitTTY yes
+PermitTunnel no
+PermitUserEnvironment no
+PidFile /run/sshd.pid
+PrintLastLog yes
+PrintMotd no
+PubkeyAuthentication yes
+StrictModes yes
+Subsystem	sftp	/usr/lib/ssh/sftp-server
+TCPKeepAlive yes
+UseDNS no
+UsePAM no
+VersionAddendum none
+X11Forwarding no
+X11UseLocalhost no
+
+# Ciphers aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr

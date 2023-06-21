@@ -1,0 +1,195 @@
+[user]
+  name = Gildas Le Drogoff
+[init]
+  defaultBranch = main
+[core]
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
+  logAllRefUpdates = always
+  pager = "less -R"
+[safe]
+  directory = /media/ramdisk
+[credential]
+	helper = cache --timeout=604800
+[commit]
+  gpgsign = true
+  template = ~/.gitmessage
+  verbose = true
+[fetch]
+  recurseSubmodules = on-demand
+  prune = false
+[pull]
+  ff = only
+  rebase = false
+[submodule]
+  recurse = false
+[apply]
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
+[color]
+  # Enable colors in color-supporting terminals
+  branch = auto
+  diff = auto
+  grep = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[tag]
+	forceSignAnnotated = true
+[help]
+  autocorrect = 30
+[log]
+  date = relative
+  decorate = true
+[merge]
+  tool = smerge
+[mergetool "smerge"]
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  trustExitCode = true
+  gpgsign = true
+[diff]
+  colorMoved = zebra
+  submodule = log
+[advice]
+  addIgnoredFile = false
+  instructionFormat = "%s%nexec GIT_COMMITTER_DATE="\"%aD\"" GIT_AUTHOR_DATE="\"%aD\"" GIT_COMMITTER_NAME="\"%cn\"" GIT_COMMITTER_EMAIL="\"%ce\"" git commit --amend --no-edit --no-verify -S"
+[rerere]
+  enabled = true
+[status]
+  submodulesummary = 1
+[alias]
+  ad = add . -v
+  add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+  alias=!git config -l | grep ^alias | cut -c 7- | sort | grep =
+  aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+  aliases = !git config --get-regexp alias | sort | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+  amend = commit --amend --reuse-message=HEAD
+  ammend = commit --amend --no-edit
+  atags = tag -a
+  b = branch -avv
+  blame-at = "!f() { git blame $1 | sed -n $2P | cut -d ' ' -f1 | xargs git show ;}; f"
+  branch-all = branch -avv
+  branch-cleanup = !git fetch origin --prune && git branch --merged master | grep -v 'master$' | xargs git branch -d
+  branch-dates-local = !git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' # Get the activity date for each local branch
+  branch-dates-remote = !git branch -r --sort=committerdate --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)|%(color:magenta)%(authorname)%(color:reset)' --color=always | column -ts'|'
+  branch-merged = branch --merged
+  branch-no-merged = branch --no-merged
+  branch-remote = branch -avv
+  branches = branch -av
+  cd-top = "! cd $(git rev-parse --show-toplevel)"
+  cdate = !"git -c rebase.instructionFormat='%s%nexec GIT_COMMITTER_DATE=\""%aD"\" GIT_AUTHOR_DATE=\""%aD"\" GIT_COMMITTER_NAME=\""%cn"\" GIT_COMMITTER_EMAIL=\""%ce"\" git commit --amend --no-edit --no-verify -S' rebase -i --root"
+  clone-submodules = clone --recurse-submodules
+  contributors = shortlog --summary --numbered
+  credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+  d-index = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  debug = "!set -x; GIT_TRACE=2 GIT_CURL_VERBOSE=2 GIT_TRACE_PERFORMANCE=2 GIT_TRACE_PACK_ACCESS=2 GIT_TRACE_PACKET=2 GIT_TRACE_PACKFILE=2 GIT_TRACE_SETUP=2 GIT_TRACE_SHALLOW=2 git"
+  describe = "!f() { git describe --always --contains --all $1; }; f"
+  diff = "!diff() { git HEAD~$1; }; diff" # specify $1
+  diff-cached = diff --cached
+  diff-main = diff main
+  diff-master = diff master
+  diff-staged = diff --staged
+  diff-words = diff --color-words
+  echo-top = "! echo $(git rev-parse --show-toplevel)"
+  edit = "!f() { git status -s | cut -b 4- | grep -v '\\/$' | uniq ; }; nvim `f`"
+  edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; nvim `f`"
+  exclude = "!f() { for arg in \"$@\"; do echo \"$arg\" >> \"$(git rev-parse --git-path info/exclude)\"; done; }; f"
+  fb = "!f() { git branch -a --contains $1; }; f"
+  fc = "!f() { git log --pretty=format:'%C(yellow)%h	%Cblue%ad %Creset%s%Cgreen [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+  fc = "!f() { git log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s%Cgreen [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+  fetch-pr = !"pr() { git fetch origin pull/$1/head:PR/pr-$1; }; pr"
+  fetch-pr-and-checkout = !"pr() { git fetch origin pull/$1/head:PR/pr-$1; git checkout PR/pr-$1; }; pr"
+  find-branch = "!f() { git branch -a --contains --ignore-case $1; }; f"
+  gb = !"gb() { git checkout main || git checkout master ; }; gb"
+  get-url = !sh -c 'echo $(git config remote.${1:-origin}.url | sed -E s/[a-z]+@\\(.+?\\):\\(.+\\)\\.git$/\\\\\\1\\\\\\/\\\\\\2/)' - # Get the URL of a repository
+  get-url-branch     = !sh -c 'BRANCH=${1:-$(git symbolic-ref --short HEAD)} && echo $(git rrl $(git config branch.$BRANCH.remote))"/tree/"$(git config branch.$BRANCH.merge | sed -E s/refs.heads.//)' - # Get the GitHub URL of a branch
+  get-url-rev = !sh -c 'echo $(git rrl)"/commit/"$(echo $(git rev-parse $([ "$0" = "sh" ] && echo HEAD || echo $0)))' # Get the GitHub URL of the revision
+  gn = grep -in
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+  gr = grep -in
+  graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+  grep = grep -in
+  grt = "! cd $(git rev-parse --show-toplevel)"
+  gt = "! cd $(git rev-parse --show-toplevel)"
+  ignore = "!f() { for arg in \"$@\"; do echo \"$arg\" >> .gitignore; done; git add .gitignore 2>/dev/null; }; f"
+  ignored = ls-files --other --ignored --exclude-standard
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  lgls = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --stat
+  local-branch-dates  = !git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' # Get the activity date for each local branch
+  log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
+  log-graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+  log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s'
+  log-last = log -1 HEAD
+  log-oneline = log --pretty=oneline
+  log-origin = log origin
+  log-patch = log -p
+  log-short = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+  log-stat = log --stat
+  log-today = !git log --since=midnight --author=\"$(git config user.name)\" --oneline
+  log-top = !git log --format=format:%an | sort | uniq -c | sort -r | head -n 20
+  log-whatadded = log --diff-filter=A
+  logg = "log --pretty=oneline -n 20 --graph --abbrev-commit"
+  ltags = tag -l
+  p = "push --progress"
+  pr = !"pr() { git fetch  ${1:-origin} pull/${1:-origin}/head:PR/pr-$2; }; pr"
+  prc = !"pr() { git fetch ${1:-origin} pull/${1:-origin}/head:pr-$2; git checkout pr-$2; }; pr"
+  pra = !"git pull --rebase --autostash"
+  push = "push --progress"
+  push-with-lease = push --force-with-lease
+  ranking = shortlog -s -n --no-merges
+  rbroot = rebase -i --root
+  reb = "!r() { git rebase -i HEAD~$1; }; r" # specify $1
+  rebase-abort = rebase --abort
+  rebase-continue = rebase --continue
+  remote-branch-dates = !git branch -r --sort=committerdate --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)|%(color:magenta)%(authorname)%(color:reset)' --color=always | column -ts'|'
+  remotes = remote -v
+  reset-h = "!rhh() { git reset --hard  HEAD~$1; }; rhh" # specify $1
+  reset-m = "!rsh() { git reset --mixed HEAD~$1; }; rsh" # specify $1
+  reset-s = "!rsh() { git reset --soft  HEAD~$1; }; rsh" # specify $1
+  reword = commit --amend
+  rs = remote -v
+  s = status -s
+  sdate = "!f() { git log --graph --pretty='%Cred%h%Creset subject : %C(bold blue)<%s>%Creset %n authorDate   : %Cgreen(%aD) %Cgreen(%at) %n commiterDate : %Cgreen(%cD) %Cgreen(%ct)  %n '; }; f"
+  sh = show
+  show-graph = git log --oneline --decorate --graph  --all
+  show-graph = log --graph --abbrev-commit --pretty=oneline
+  show-top = "! echo $(git rev-parse --show-toplevel)"
+  slog = shortlog -s -n --no-merges
+  slog-rank = shortlog -s -n --no-merges
+  slog-ranking = shortlog -s -n --no-merges
+  so = remote show origin
+  sr = remote -v
+  st = "! echo $(git rev-parse --show-toplevel)"
+  stags = tag -s
+  uncommit = reset --soft HEAD~1
+  undo = !git reset HEAD~1 --mixed
+  unreleased = "!f() { git fetch --tags && git diff $(git tag | tail -n 1); }; f"
+  unstage = reset --soft HEAD~1
+  untrack = rm --cache --
+  up = pull --rebase
+  update-submodules = !"git pull; git submodule foreach git pull --rebase --autostash"
+  wc = whatchanged
+  whatadded = log --diff-filter=A
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[tag]
+	forceSignAnnotated = false
+[push]
+	autoSetupRemote = true
+[pack]
+	windowMemory = 1g
+	packSizeLimit = 1g
+	threads = 16
+[gc]
+	auto = 1000
+	autoPackLimit = 30
+[http]
+     sslVerify = false

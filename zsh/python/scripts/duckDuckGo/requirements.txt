@@ -1,0 +1,4 @@
+black==24.10.0
+colorama==0.4.6
+duckduckgo_search==6.3.0
+icecream==2.1.3

@@ -1,0 +1,7 @@
+-f 'bv*[height<=8000]+ba/b'
+--add-metadata
+--merge-output-format mkv
+--restrict-filenames
+--write-thumbnail
+--convert-thumbnails "png"
+--no-mtime
